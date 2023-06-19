@@ -43,4 +43,4 @@ def load_and_test_model(version, env, lib):
 
 #create_and_save_model(version=7)
 for i in range(100):
-    load_and_test_model(version=6, env=env, lib=PPO)
+    load_and_test_model(version=5, env=env, lib=PPO)

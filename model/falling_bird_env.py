@@ -86,8 +86,7 @@ class FallingBird(gym.Env):
         self.done = self.game_over = False
         print(f"Score: {self.score}")
         self.iterations += 1
-        if self.iterations % 2000 == 0:
-            self.positions = [random.randint(0, 700) for _ in range(102)]
+        self.positions = [random.randint(0, 700) for _ in range(102)]
         self.score = 0
         self.obstacle_rects = []
         self.player = Player(Window.WIDTH // 2, 0)
